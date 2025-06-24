@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VORNWELL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VORNWELL</h1>
+    </header>
+    <section class="banner">
+        <img src="images/banner.jpg" alt="Banner">
+    </section>
+    <section id="products">
+        
+        <div class="product-card">
+            <img src="images/acciaio.jpg" alt="Acciaio">
+            <h2>Acciaio</h2>
+            <p>A bold and modern scent infused with crisp citrus and smoky woods.</p>
+            <span>£29.99</span>
+            <button onclick="addToCart('Acciaio', '£29.99')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/aureateaura.jpg" alt="Aureate Aura">
+            <h2>Aureate Aura</h2>
+            <p>Radiates golden warmth with hints of honeyed amber and floral tones.</p>
+            <span>£32.50</span>
+            <button onclick="addToCart('Aureate Aura', '£32.50')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/boss.jpg" alt="Boss">
+            <h2>Boss</h2>
+            <p>Confident and timeless. Boss delivers a clean, masculine blend of fresh spice.</p>
+            <span>£31.99</span>
+            <button onclick="addToCart('Boss', '£31.99')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/dolce.jpg" alt="Dolce">
+            <h2>Dolce</h2>
+            <p>Soft, sweet, and captivating. A signature of light florals and powdery notes.</p>
+            <span>£30.50</span>
+            <button onclick="addToCart('Dolce', '£30.50')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/elysian.jpg" alt="Elysian">
+            <h2>Elysian</h2>
+            <p>A fresh and heavenly burst of citrus and neroli for uplifting elegance.</p>
+            <span>£33.00</span>
+            <button onclick="addToCart('Elysian', '£33.00')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/imperium.jpg" alt="Imperium">
+            <h2>Imperium</h2>
+            <p>Rich, deep layers of oud and vanilla. A regal choice for night wear.</p>
+            <span>£34.75</span>
+            <button onclick="addToCart('Imperium', '£34.75')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/noir.jpg" alt="Noir Essence">
+            <h2>Noir Essence</h2>
+            <p>Smoky, mysterious, and seductive. Dark florals blended with incense.</p>
+            <span>£35.99</span>
+            <button onclick="addToCart('Noir Essence', '£35.99')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/rosette.jpg" alt="Rosette">
+            <h2>Rosette</h2>
+            <p>Flirty rose petals kissed with white musk and fresh greens.</p>
+            <span>£28.50</span>
+            <button onclick="addToCart('Rosette', '£28.50')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/veridian.jpg" alt="Veridian">
+            <h2>Veridian</h2>
+            <p>Earthy, clean, and energizing. A fusion of green tea and crisp mint.</p>
+            <span>£31.00</span>
+            <button onclick="addToCart('Veridian', '£31.00')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/zaffiro.jpg" alt="Zaffiro">
+            <h2>Zaffiro</h2>
+            <p>A luxurious blend of jasmine, sandalwood, and blue amber.</p>
+            <span>£36.25</span>
+            <button onclick="addToCart('Zaffiro', '£36.25')">Add to Cart</button>
+        </div>
+        
+    </section>
+    <div id="cartButton" onclick="toggleCart()">View Cart</div>
+    <div id="cartModal" class="modal hidden">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <form id="checkoutForm">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <button type="submit">Confirm Order</button>
+        </form>
+        <button onclick="toggleCart()">Close</button>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
